@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        get("/xml", (request, response) -> {
+            response.type("application/xml");
+            return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><saludo>Hola Mundo</saludo>";
+        });
     }
 }
