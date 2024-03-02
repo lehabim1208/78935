@@ -1,4 +1,5 @@
 package mx.uv;
+import static spark.Spark.*;
 
 /**
  * Hello world!
